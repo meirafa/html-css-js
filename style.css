@@ -1,0 +1,183 @@
+section {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+span {
+  font-weight: 100;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+dl {
+    border: 1px solid red;
+}
+
+/* pseudo-classe*/
+.box--hover:hover {
+  background-color: blue;
+  color: white;
+}
+
+.box--active:active {
+  background-color: green;
+  color: white;
+}
+
+.box--focus button:focus {
+    background-color: lightblue;
+}
+
+.box--within:focus-within {
+  background-color: lightblue;
+}
+
+.box--first li:first-child {
+  background-color: lightgray;
+}
+
+.box--last li:last-child {
+  background-color: lightgray;
+}
+
+div > ul {
+  font-weight: bold;
+}
+
+.box--odd ul li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.box--even ul li:nth-child(even) {
+  background-color: lightgray;
+}
+
+.box--3n ul li:nth-child(3n) {
+  background-color: lightgray;
+}
+
+.box--3 ul li:nth-child(3) {
+  background-color: lightgray;
+}
+
+/* pseudo-elemento */
+.box--before::before {
+  content: "Antes ";
+  color: blue;
+}
+
+.box--after::after {
+  content: " Depois";
+  color: blue;
+}
+
+.box--line::first-line {
+  color: blue;
+}
+
+.box--letter::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+}
+
+.box--selection::selection {
+  background-color: yellow;
+  color: black;
+}
+
+/* animacao */
+
+.rotating-object {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation: rotate 2s linear infinite; /* 2 segundos de duração, movimento linear, repetição infinita */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  } /* ângulo inicial */
+  to {
+    transform: rotate(360deg);
+  } /* ângulo final */
+}
+
+.scaling-object {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: scale 2s ease-in-out infinite; /* 2 segundos de duração, aceleração e desaceleração suaves, repetição infinita */
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  } /* tamanho normal */
+  50% {
+    transform: scale(1.5);
+  } /* 1,5x maior */
+  100% {
+    transform: scale(1);
+  } /* volta ao tamanho normal */
+}
+
+.translating-object {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation: translate 2s ease infinite; /* 2 segundos de duração, movimento suave, repetição infinita */
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(0px);
+  } /* posição inicial */
+  50% {
+    transform: translateX(200px);
+  } /* movimento para direita */
+  100% {
+    transform: translateX(0px);
+  } /* volta à posição inicial */
+}
+
+/* transicao */
+.color-transition {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition: background-color 0.5s ease; /* transição suave da cor de fundo em 0.5 segundos */
+}
+
+.color-transition:hover {
+  background-color: red; /* nova cor de fundo quando o mouse passa por cima */
+}
+
+.width-transition {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: width 0.5s ease; /* transição suave da largura em 0.5 segundos */
+}
+
+.width-transition:hover {
+  width: 200px; /* nova largura quando o mouse passa por cima */
+}
+
+.opacity-transition {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  transition: opacity 0.5s ease; /* transição suave da opacidade em 0.5 segundos */
+}
+
+.opacity-transition:hover {
+  opacity: 0.5; /* nova opacidade quando o mouse passa por cima */
+}

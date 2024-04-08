@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Exemplos</title>
+  </head>
+  <body>
+    <section>
+      <h1>Tags frequentemente usadas em conjunto:</h1>
+
+      &lt;figure&gt; e &lt;figcaption&gt;: Usados para envolver uma imagem ou
+      gráfico com uma legenda.
+      <br />
+      &lt;ol&gt; e &lt;li&gt;: Usados para criar listas ordenadas.
+      <br />
+      &lt;ul&gt; e &lt;li&gt;: Usados para criar listas não ordenadas.
+      <br />
+      &lt;dl&gt;, &lt;dt&gt; e &lt;dd&gt;: Usados para criar listas de
+      definição.
+      <br />
+      <p>DL: define a lista de definição:</p>
+      <p>DT: define um termo na lista de definição;</p>
+      <p>DD: define a descrição correspondente ao termo definido.</p>
+      <dl>
+        <dt>dt -> HTML</dt>
+        <dd>
+          dd -> HyperText Markup Language - Linguagem de Marcação de Hipertexto
+        </dd>
+
+        <dt>dt -> CSS</dt>
+        <dd>dd -> Cascading Style Sheets - Folhas de Estilo em Cascata</dd>
+      </dl>
+      <br />
+      &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;,
+      &lt;th&gt;, &lt;td&gt;: Usados para criar tabelas.
+      <br />
+      &lt;form&gt;, &lt;input&gt;, &lt;button&gt;, &lt;select&gt;,
+      &lt;textarea&gt;: Usados para criar formulários.
+      <br />
+      &lt;details&gt; e &lt;summary&gt;: Usados para criar um elemento de
+      detalhes que pode ser expandido ou recolhido.
+    </section>
+
+    <section>
+      <h1>
+        Pseudo-classe:
+        <span>
+          São usados para estilizar elementos com base em seu estado ou
+          interação do usuário.
+        </span>
+      </h1>
+
+      <p>
+        :hover - Estiliza um elemento quando o cursor do mouse está sobre ele.
+      </p>
+      <button class="box--hover">Passa o mouse aqui</button>
+
+      <p>
+        :active - Estiliza um elemento enquanto ele está sendo clicado pelo
+        usuário.
+      </p>
+      <button class="box--active">Clique aqui</button>
+
+      <p>
+        :focus - Estiliza o elemento quando ele recebe o foco, após ser
+        selecionado pelo usuário.
+      </p>
+      <div class="box--focus">
+        <input type="text" placeholder="Digite algo" />
+        <button>Clique aqui</button>
+      </div>
+
+      <p>
+        :focus-within - Estiliza o bloco de elemento quando qualquer um deles
+        ganha foco.
+      </p>
+      <div class="box--within">
+        <input type="text" placeholder="Digite algo" />
+        <button>Clique aqui</button>
+      </div>
+
+      <p>:first-child - Estiliza o primeiro elemento filho de seu pai.</p>
+      <ul class="box--first">
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+      </ul>
+
+      <p>:last-child - Estiliza o último elemento filho de seu pai.</p>
+      <ul class="box--last">
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+      </ul>
+
+      <p>
+        :nth-child() - Estiliza elementos específicos com base em uma fórmula
+        matemática.
+      </p>
+      <div class="box--odd">
+        <ul>
+          :nth-child(odd) - Estilizando elementos ímpares de uma lista
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+      <div class="box--even">
+        <ul>
+          :nth-child(even) - Estilizando elementos pares de uma lista
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+      <div class="box--3n">
+        <ul>
+          :nth-child(3n) - Estilizando cada terceiro elemento de uma lista
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 6</li>
+        </ul>
+      </div>
+      <div class="box--3">
+        <ul>
+          :nth-child(3) - Estilizando apenas o terceiro elemento de uma lista
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 6</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h1>
+        Pseudo-elemento:
+        <span>
+          São usados para selecionar partes específicas de um elemento.
+        </span>
+      </h1>
+
+      <p>::before - Adiciona conteúdo antes de elementos HTML.</p>
+      <div class="box--before">Este é um exemplo.</div>
+
+      <p>::after - Adiciona conteúdo após elementos HTML.</p>
+      <div class="box--after">Este é um exemplo.</div>
+
+      <p>::first-line - Estiliza a primeira linha do bloco.</p>
+      <div class="box--line">
+        Este é um exemplo de primeira linha.
+        <br />
+        Este é um exemplo de segunda linha.
+      </div>
+
+      <p>::first-letter - Estiliza a primeira letra do bloco.</p>
+      <div class="box--letter">Este é um exemplo.</div>
+
+      <p>::selection - Estiliza o texto selecionado pelo usuário.</p>
+      <div class="box--selection">
+        Selecione este texto para ver a mudança de estilo.
+      </div>
+    </section>
+
+    <section>
+      <h1>Animacoes:</h1>
+
+      <p>Animação de Rotação</p>
+      <div class="rotating-object"></div>
+
+      <p>Animação de Escala</p>
+      <div class="scaling-object"></div>
+
+      <p>Animação de Translação</p>
+      <div class="translating-object"></div>
+    </section>
+
+    <section>
+      <h1>Transicao:</h1>
+
+      <p>Transição de Cor</p>
+      <div class="color-transition"></div>
+
+      <p>Transição de Largura</p>
+      <div class="width-transition"></div>
+
+      <p>Transição de Opacidade</p>
+      <div class="opacity-transition"></div>
+    </section>
+  </body>
+</html>
