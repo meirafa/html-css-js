@@ -15,10 +15,6 @@ p {
   font-weight: bold;
 }
 
-dl {
-    border: 1px solid red;
-}
-
 /* pseudo-classe*/
 .box--hover:hover {
   background-color: blue;

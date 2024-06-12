@@ -9,41 +9,200 @@
     <title>Exemplos</title>
   </head>
   <body>
-<!--    <section>
+    <section>
+      <h1>Tags de Texto: usadas para formatar e estruturar o texto da página</h1>
+      <div>
+        <p>Tags como &lt;p&gt; para parágrafos, &lt;h1&gt; a &lt;h6&gt; para títulos, &lt;em&gt; ou &lt;i&gt; para enfatizar o texto em italico, &lt;strong&gt; para destacar o texto em negrito, &lt;blockquote&gt; para criar uma citação em bloco, e &lt;span&gt; Esta é uma tag de contêiner genérica que não adiciona significado semântico ao texto, mas é útil para aplicar estilos ou comportamentos específicos a partes específicas do texto.</p>
+      </div>
+      <div>
+        <p></p>
+      </div>
+
+      <h1>Tags de Multimídia:</h1>
+      <div>
+        <p>&lt;video&gt; são usadas para incorporar vídeos.</p>
+      </div>
+      <div>
+        <p>&lt;audio&gt; são usadas para incorporar áudios.</p>
+      </div>
+      <div>
+        <p>
+          &lt;iframe&gt; são usadas para incorporar conteúdo de outras fontes na
+          página.
+        </p>
+      </div>
+
       <h1>Tags frequentemente usadas em conjunto:</h1>
+      <div>
+        <p>
+          &lt;figure&gt; e &lt;figcaption&gt;: Usados para envolver uma imagem
+          ou gráfico com uma legenda.
+        </p>
+        &lt;figure&gt;
+        <figure>
+          &lt;img src=
+          <img
+            src="https://images.unsplash.com/photo-1566567269999-c6078915e160?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="dachshund"
+            style="width: 10%;"
+          />
+          &gt;
+          <br />
+          &lt;figcaption&gt;
+          <figcaption>Fig.1 - Dachshund.</figcaption>
+          &lt;/figcaption&gt;
+        </figure>
+        &lt;/figure&gt;
+      </div>
+      <div>
+        <p>&lt;ol&gt; e &lt;li&gt;: Usados para criar listas ordenadas.</p>
 
-      &lt;figure&gt; e &lt;figcaption&gt;: Usados para envolver uma imagem ou
-      gráfico com uma legenda.
-      <br />
-      &lt;ol&gt; e &lt;li&gt;: Usados para criar listas ordenadas.
-      <br />
-      &lt;ul&gt; e &lt;li&gt;: Usados para criar listas não ordenadas.
-      <br />
-      &lt;dl&gt;, &lt;dt&gt; e &lt;dd&gt;: Usados para criar listas de
-      definição.
-      <br />
-      <p>DL: define a lista de definição:</p>
-      <p>DT: define um termo na lista de definição;</p>
-      <p>DD: define a descrição correspondente ao termo definido.</p>
-      <dl>
-        <dt>dt -> HTML</dt>
-        <dd>
-          dd -> HyperText Markup Language - Linguagem de Marcação de Hipertexto
-        </dd>
+        &lt;ol&gt;
+        <ol>
+          &lt;li&gt;
+          <li>primeira linha</li>
+          &lt;/li&gt;
+          <br />
+          &lt;li&gt;
+          <li>segunda linha</li>
+          &lt;/li&gt;
+        </ol>
+        &lt;/ol&gt;
+      </div>
+      <div>
+        <p>&lt;ul&gt; e &lt;li&gt;: Usados para criar listas não ordenadas.</p>
 
-        <dt>dt -> CSS</dt>
-        <dd>dd -> Cascading Style Sheets - Folhas de Estilo em Cascata</dd>
-      </dl>
-      <br />
-      &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;,
-      &lt;th&gt;, &lt;td&gt;: Usados para criar tabelas.
-      <br />
-      &lt;form&gt;, &lt;input&gt;, &lt;button&gt;, &lt;select&gt;,
-      &lt;textarea&gt;: Usados para criar formulários.
-      <br />
-      &lt;details&gt; e &lt;summary&gt;: Usados para criar um elemento de
-      detalhes que pode ser expandido ou recolhido.
-    </section> -->
+        &lt;ul&gt;
+        <ul>
+          &lt;li&gt;
+          <li>primeira linha</li>
+          &lt;/li&gt;
+          <br />
+          &lt;li&gt;
+          <li>segunda linha</li>
+          &lt;/li&gt;
+        </ul>
+        &lt;/ul&gt;
+      </div>
+      <div>
+        <p>
+          &lt;dl&gt; define a lista de definição, &lt;dt&gt; define um termo na
+          lista de definição, e &lt;dd&gt; define a descrição correspondente ao
+          termo definido.
+        </p>
+
+        &lt;dl&gt;
+        <dl>
+          &lt;dt&gt;
+          <dt>HTML</dt>
+          &lt;/dt&gt;
+          <br />
+          &lt;dd&gt;
+          <dd>
+            HyperText Markup Language - Linguagem de Marcação de Hipertexto
+          </dd>
+          &lt;/dd&gt;
+          <br />
+          &lt;dt&gt;
+          <dt>CSS</dt>
+          &lt;/dt&gt; <br />
+          &lt;dd&gt;
+          <dd>Cascading Style Sheets - Folhas de Estilo em Cascata</dd>
+          &lt;dd&gt;
+        </dl>
+        &lt;/dl&gt;
+      </div>
+      <div>
+        <p>
+          &lt;table&gt; define a tabela, &lt;thead&gt; define o cabeçalho da
+          tabela, &lt;tbody&gt; define o corpo da tabela, &lt;tfoot&gt; define o
+          rodapé da tabela, &lt;tr&gt; define uma linha na tabela, &lt;th&gt;
+          define um cabeçalho de célula na tabela, &lt;td&gt; define uma célula
+          na tabela.
+        </p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>João</td>
+              <td>Silva</td>
+            </tr>
+            <tr>
+              <td>Maria</td>
+              <td>Souza</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total de pessoas: 2</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div>
+        <p>
+          &lt;form&gt;, &lt;input&gt;, &lt;button&gt;, &lt;select&gt;,
+          &lt;textarea&gt;, &lt;fieldset&gt; &lt;legend&gt;: Usados para criar
+          formulários.
+        </p>
+        &lt;form&gt;
+        <form>
+          &lt;fieldset&gt;
+          <fieldset>
+            <legend>&lt;legend&gt; Informações Pessoais &lt;/legend&gt;</legend>
+
+            &lt;label&gt;
+            <label for="nome">Nome:</label>&lt;/label&gt; &lt;input&gt;
+            <input type="text" id="nome" name="nome" />&lt;/input&gt;
+            <br />
+            &lt;label&gt;
+            <label for="sexo">Genero:</label>&lt;/label&gt; &lt;select&gt;
+            <select id="sexo" name="sexo">
+              <option value="masculino">
+                &lt;option&gt; Masculino &lt;/option&gt;</option
+              >
+              <option value="feminino">
+                &lt;option&gt;Feminino &lt;/option&gt;</option
+              >
+            </select>
+            &lt;/select&gt;
+            <br /><br />
+          </fieldset>
+          &lt;/fieldset&gt;
+          <br />
+
+          &lt;label&gt;
+          <label for="mensagem">Mensagem:</label>
+          &lt;/label&gt; &lt;textarea&gt;
+
+          <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+          &lt;/textarea&gt;
+
+          <br />
+          &lt;button&gt;
+          <button type="submit">Enviar</button>
+          &lt;/button&gt;
+        </form>
+        &lt;/form&gt;
+      </div>
+      <div>
+        <p>
+          &lt;details&gt; e &lt;summary&gt;: Usados para criar um elemento de
+          detalhes que pode ser expandido ou recolhido.
+        </p>
+        &lt;details&gt;
+        <details>
+          <summary> &lt;summary&gt; Titulo &lt;/summary&gt;</summary>
+          <p>conteudo detalhado</p>
+        </details>
+        &lt;/details&gt;
+      </div>
+    </section>
 
     <section>
       <h1>
